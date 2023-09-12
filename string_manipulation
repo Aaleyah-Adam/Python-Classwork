@@ -1,0 +1,54 @@
+def LEFT(string, length):
+    # returns the leftmost characters of a string
+    return string[0:length]
+
+def RIGHT(string, length):
+    # Returns the rightmost characters of a string
+    return string[-length:]
+
+def MID(string, start, end):
+    # Returns string from position start to end (inclusive)
+    return string[start - 1:end]
+
+def LENGTH(string):
+    # Returns the length of a string
+    return len(string)
+
+def LCASE(string):
+    # Returns the string in lowercase
+    return string.lower()
+
+def UCASE(char):
+    # Returns the upper case character (does nothing if already upper case)
+    return char.upper()
+
+def TO_UPPER(string):
+    # Returns a string in upper case (non-alphabetic characters and upper case characters remain unchanged)
+    return string.upper()
+
+def TO_LOWER(string):
+    # Returns a string in lower case (non-alphabetic characters and lower case characters remain unchanged)
+    return string.lower()
+
+def NUM_TO_STRING(number):
+    # Converts a number to a string
+    return str(number)
+
+def STRING_TO_NUM(string):
+    # Converts a string to a number
+    try:
+        return int(string)
+    except ValueError:
+        return float(string)
+
+def INT(number):
+    # Returns the integer part of a number
+    return int(number)
+
+def ASC(char):
+    # Changes a character into its ASCII number
+    return ord(char)
+
+# example function being called
+my_string = LEFT("hello", 2)
+print(my_string)
